@@ -1,5 +1,6 @@
 package org.n1ex1;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Undo {
@@ -8,6 +9,7 @@ public class Undo {
 
     private static Undo instance;
     private static Stack<String> history;
+    private static Scanner scanner;
 
     //Constructor privat
     private Undo() {
@@ -25,10 +27,12 @@ public class Undo {
 
     public void add(String str) {
         history.push(str);
+        System.out.println("Comanda introduïda");
     }
 
     public void undo() {
         history.pop();
+        System.out.println("Última comanda eliminada");
     }
 
     public void show() {

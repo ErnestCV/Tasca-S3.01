@@ -1,28 +1,54 @@
 package org.n1ex1;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        //https://stackoverflow.com/questions/11530276/how-do-i-implement-a-simple-undo-redo-for-actions-in-java
+        //Inicialitzar
+        Scanner scanner = new Scanner(System.in);
+        Undo instance = Undo.getInstance();
 
+        int select;
 
-        //Undo -> aplicar command
+        do {
 
-        //Patró command
-        //Patró memento
+            printMenu();
 
+            select = scanner.nextInt();
+            scanner.nextLine();
 
-        //TODO per consola
+            switch (select) {
+                //Introduir una comanda
+                case 1 -> {System.out.println("Introdueix la següent comanda:");
+                    instance.add(scanner.nextLine());
+                }
 
-        Undo.getInstance().add("Command 1");
-        Undo.getInstance().add("Command 2");
-        Undo.getInstance().add("Command 3");
+                //Eliminar la darrera comanda introduïda
+                case 2 -> instance.undo();
 
-        Undo.getInstance().undo();
+                //Mostrar totes les comandes
+                case 3 -> instance.show();
 
-        Undo.getInstance().add("Command 4");
+                //Sortir del programa
+                case 0 -> System.out.println("Sortint del programa");
 
-        Undo.getInstance().show();
+            }
+
+        } while (select != 0);
+    }
+
+    static void printMenu() {
+
+        System.out.println("""
+                -------------------
+                Escolliu una opció:
+                1: Introduir una comanda
+                2: Eliminar la darrera comanda introduïda
+                3: Mostrar totes les comandes
+                0: Sortir
+                ------------------
+                """);
 
     }
 }
