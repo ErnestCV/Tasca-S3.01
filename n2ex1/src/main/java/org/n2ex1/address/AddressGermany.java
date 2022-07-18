@@ -1,6 +1,6 @@
-package org.n1ex2.address;
+package org.n2ex1.address;
 
-import org.n1ex2.IOUtils;
+import org.n2ex1.IOUtils;
 
 public class AddressGermany implements Address{
 

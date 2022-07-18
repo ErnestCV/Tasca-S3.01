@@ -1,9 +1,9 @@
-package org.n1ex2.factories;
+package org.n2ex1.factories;
 
-import org.n1ex2.address.Address;
-import org.n1ex2.address.AddressUSA;
-import org.n1ex2.phone.Phone;
-import org.n1ex2.phone.PhoneUSA;
+import org.n2ex1.address.Address;
+import org.n2ex1.address.AddressUSA;
+import org.n2ex1.phone.Phone;
+import org.n2ex1.phone.PhoneUSA;
 
 public class USAFactory implements AbstractFactory {
 

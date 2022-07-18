@@ -1,4 +1,4 @@
-package org.n1ex2;
+package org.n2ex1;
 
 import java.util.Scanner;
 

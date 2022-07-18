@@ -1,8 +1,8 @@
-package org.n1ex2;
+package org.n2ex1;
 
-import org.n1ex2.factories.AbstractFactory;
-import org.n1ex2.factories.GermanyFactory;
-import org.n1ex2.factories.USAFactory;
+import org.n2ex1.factories.AbstractFactory;
+import org.n2ex1.factories.GermanyFactory;
+import org.n2ex1.factories.USAFactory;
 
 public class FactoryProvider {
 

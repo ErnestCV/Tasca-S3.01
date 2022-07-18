@@ -1,6 +1,6 @@
-package org.n1ex2;
+package org.n2ex1;
 
-import org.n1ex2.factories.AbstractFactory;
+import org.n2ex1.factories.AbstractFactory;
 
 import java.util.ArrayList;
 import java.util.List;

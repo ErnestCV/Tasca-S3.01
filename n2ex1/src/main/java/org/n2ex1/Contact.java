@@ -1,8 +1,8 @@
-package org.n1ex2;
+package org.n2ex1;
 
-import org.n1ex2.address.Address;
-import org.n1ex2.factories.AbstractFactory;
-import org.n1ex2.phone.Phone;
+import org.n2ex1.address.Address;
+import org.n2ex1.factories.AbstractFactory;
+import org.n2ex1.phone.Phone;
 
 public class Contact {
 

@@ -1,20 +1,20 @@
-package org.n1ex2.phone;
+package org.n2ex1.phone;
 
-import org.n1ex2.IOUtils;
+import org.n2ex1.IOUtils;
 
-public class PhoneUSA implements Phone {
+public class PhoneGermany implements Phone {
 
     private String phoneNumber;
 
-    public PhoneUSA() {
+    public PhoneGermany() {
         this.phoneNumber = providePhoneNumber();
     }
 
     @Override
     public String providePhoneNumber() {
-        System.out.println("Input a US phone number:");
+        System.out.println("Input a German phone number:");
         String number = IOUtils.readString();
-        return "+1 " + number;
+        return "+49 " + number;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package org.n1ex2.phone;
+package org.n2ex1.phone;
 
 public interface Phone {
 

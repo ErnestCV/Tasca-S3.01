@@ -1,4 +1,4 @@
-package org.n1ex2.address;
+package org.n2ex1.address;
 
 public interface Address {
 
