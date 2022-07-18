@@ -38,7 +38,7 @@ public class Main {
         } while (select != 0);
     }
 
-    static void printMenu() {
+    public static void printMenu() {
 
         System.out.println("""
                 -------------------
