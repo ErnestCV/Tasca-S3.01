@@ -9,7 +9,6 @@ public class Undo {
 
     private static Undo instance;
     private static Stack<String> history;
-    private static Scanner scanner;
 
     //Constructor privat
     private Undo() {
@@ -31,8 +30,12 @@ public class Undo {
     }
 
     public void undo() {
-        history.pop();
-        System.out.println("Última comanda eliminada");
+        if (history.size() > 0) {
+            history.pop();
+            System.out.println("Última comanda eliminada");
+        } else {
+            System.out.println("No hi ha més comandes a l'historial");
+        }
     }
 
     public void show() {
