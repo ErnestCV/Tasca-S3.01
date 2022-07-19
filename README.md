@@ -5,3 +5,7 @@ Es mostra només el funcionament simple de la gestió de l'historial amb un gest
 ## Nivell 2
 
 Quedaria pendent una possible funcionalitat per editar o eliminar elements de l'agenda, que no s'ha implementat. Només s'ha fet la implementació de 2 països però seria trivial afegir-ne més; tampoc s'ha afegit una validació dels formats de contacte de cada país.
+
+## Nivell 3
+
+Es podria estendre introduïnt un patró de memento per tenir una funcionalitat de desfer comandes. 
