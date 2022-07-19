@@ -50,4 +50,7 @@ public class Main {
         invokerParking.execute();
 
     }
+
+    //https://riptutorial.com/design-patterns/example/8933/command-pattern-example-in-java
+    //https://www.tutorialspoint.com/design_pattern/command_pattern.htm#
 }
