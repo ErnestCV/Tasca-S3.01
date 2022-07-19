@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="n2ex1" />
         <module name="n1ex1Extra" />
+        <module name="n2ex1" />
         <module name="n1ex1" />
+        <module name="n3ex1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="n1ex2" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
